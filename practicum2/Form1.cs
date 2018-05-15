@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,10 +33,27 @@ namespace practicum2
             String output = MethodRunner.RunAllMethods(num1,num2,num3);
             methodOutput.Text = output;
 
-            output = LambdaRunner.RunAllMethods(num1,num2,num3);
-            lambdaOutput.Text = output;
+            String output2 = LambdaRunner.RunAllMethods(num1,num2,num3);
+            lambdaOutput.Text = output2;
 
-            System.Windows.Forms.MessageBox.Show((lambdaOutput.Text == methodOutput.Text).ToString());
+            
+            string[] words = output.Split('\n');
+            string[] words2 = output2.Split('\n');
+            List<String> outputs1 = new List<String>();
+            List<String> outputs2 = new List<String>();
+            foreach (var word in words) {
+               
+                 outputs1.Add(word.Split('=').Last());
+              
+            }
+            foreach (var word in words2) {
+
+                outputs2.Add(word.Split('=').Last());
+            }
+            Debug.WriteLine(outputs1.ToString());
+            Debug.WriteLine(outputs2.ToString());
+
+            MessageBox.Show(outputs1.SequenceEqual(outputs2).ToString());
         }
     }
 }

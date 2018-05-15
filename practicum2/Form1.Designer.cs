@@ -138,6 +138,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(647, 406);
+            this.Controls.Add(this.methodOutput);
             this.Controls.Add(this.num3Text);
             this.Controls.Add(this.num3TextLb);
             this.Controls.Add(this.num2Text);
@@ -145,7 +146,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lambdaOutput);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.methodOutput);
             this.Controls.Add(this.num1Text);
             this.Controls.Add(this.num1lab);
             this.Controls.Add(this.button1);

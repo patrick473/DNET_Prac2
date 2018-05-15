@@ -27,27 +27,27 @@ namespace practicum2
             switch (x)
             {
                 case 0:
-                    return "zero"; break;
+                    return "zero"; 
                 case 1:
-                    return "one"; break;
+                    return "one"; 
                 case 2:
-                    return "two"; break;
+                    return "two";
                 case 3:
-                    return "three"; break;
+                    return "three"; 
                 case 4:
-                    return "four"; break;
+                    return "four"; 
                 case 5:
-                    return "five"; break;
+                    return "five";
                 case 6:
-                    return "six"; break;
+                    return "six"; 
                 case 7:
-                    return "seven"; break;
+                    return "seven"; 
                 case 8:
-                    return "eight"; break;
+                    return "eight";
                 case 9:
-                    return "nine"; break;
+                    return "nine"; 
                 default:
-                    return "undefined"; break;
+                    return "undefined";
             }
         }
 
